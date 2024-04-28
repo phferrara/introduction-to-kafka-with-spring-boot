@@ -9,13 +9,22 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dev.lydtech</groupId>
-	<artifactId>dispatch</artifactId>
+	<artifactId>dispatch-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dispatch</name>
+	<name>dispatch-parent</name>
 	<description>Demo project for Spring Boot</description>
+
+	<packaging>pom</packaging>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+	<modules>
+		<module>dispatch</module>
+		<module>tracking</module>
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
